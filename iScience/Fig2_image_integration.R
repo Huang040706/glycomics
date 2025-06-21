@@ -1,0 +1,15 @@
+p1 = image_read("bar_plot_A_H3N4F1E0L0.png")
+p2 = image_read("bar_plot_B_H5N5F1E0L0.png")
+p3 = image_read("bar_plot_C_H5N4F0E1L1.png")
+p4 = image_read("bar_plot_D_H4N3F0E0L1.png")
+p5 = image_read("bar_plot_E_H5N3F0E1L0.png")
+p6 = image_read("bar_plot_F_H7N6F0E2L2.png")
+
+pp1 = image_ggplot(p1,interpolate = F)
+pp2 = image_ggplot(p2,interpolate = F)
+pp3 = image_ggplot(p3,interpolate = F)
+pp4 = image_ggplot(p4,interpolate = F)
+pp5 = image_ggplot(p5,interpolate = F)
+pp6 = image_ggplot(p6,interpolate = F)
+
+ggarrange(pp1,pp2,pp3,pp4,pp5,pp6)
